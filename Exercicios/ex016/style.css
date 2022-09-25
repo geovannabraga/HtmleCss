@@ -1,0 +1,32 @@
+@charset "UTF-8"; /*Tudo o que começa com @ no CSS é uma regra*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #038C3E, #0CF25D);
+}
+
+main{
+    background-color: white;
+    width: 600px;/*medida da caixa de texto*/
+    padding: 10px;/*medida do acolchoamento*/
+    margin: auto;/*este comando ira centralizar a caixa de texto independentemente do tamanho da tela do navegador*/
+    border-radius: 10px;/*Comando para definir o quanto de arredondamento tera as bordas da caixa de texto*/
+    box-shadow: 5px 5px 15px #02612b96;/*Comando para colocar uma sombra na caixa e definir suas caracteristicas*/
+}
+
+h1{
+    color: #034159;
+    text-align: center;
+    text-shadow: 1px 1px 2px #034159;/*Comando para colocar uma sombra no texto*/
+}
+
+h2{
+    color: #025951;
+}
+
+p{
+    text-align: justify;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <!--As grouping tags servem para organizar seu codigo de forma que a estrutura do codigo esteja relacionada com a estrutura do conteudo do site-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(45, 101, 151);
+            margin: 0px;
+        }
+
+        header {
+            background-color: aqua;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(50, 53, 233);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.534);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: bisque;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        article {
+            background-color: lightpink;
+        }
+
+        article > aside {
+            background-color: rgb(189, 135, 143);
+        }
+
+        footer {
+            background-color: rgb(163, 228, 228);
+            color: blue;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header><!--Cabecalho-->
+        <h1>Meu site</h1>
+        <nav><!--nav é menu de navegacao-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main><!--Conteudo principal-->
+        <section id="assuntos"><!--Seção-->
+
+        </section>
+        <section id="noticias">
+            <article><!--Artigo-->
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea voluptas quia nisi ullam deserunt? Ratione, beatae id, non aut consectetur aliquid cupiditate tempore eligendi distinctio et magnam quibusdam quae esse?</p>
+                 <aside>
+                    <p>Artigo escrito por Jose</p>
+                 </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer><!--Rodapé-->
+        <p>Desenvolvido pelo Curso em Video</p>
+    </footer>
+</body>
+</html>

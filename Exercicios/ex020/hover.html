@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*O símbolo > quer dizer que um é filho do outro, ou seja, p é filho de div*/
+        /*display significa a apresentacao na tela*/
+        /*Ou seja, o comando a seguir diz que, os paragrafos dentro de div nao irao aparecer na tela*/
+        div > p {
+            display: none;
+        }
+
+        /*hover significa passar o mouse*/
+        /*Ou seja, o comando diz que, quando passar o mouse sobre o texto de div os paragrafos filhos de div devem aparecer na tela*/
+        div:hover > p {
+            display: block;
+        }
+
+        /*O comando a seguir diz que, quando passar o mouse sobre o texto escrito em div, a cor do texto ficará vermelha*/
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+</html>

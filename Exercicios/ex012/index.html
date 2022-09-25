@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em Html5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado no meu proprio servidor</p>
+    <p>Primeiro tipo de codigo para colocar um video no seu site</p>
+    <video src="midia/meuvideomp4.mp4" width="200" poster="pictures/tea image.webp" controls></video>
+    <!--TAG video: serve para colocar um video no site-->
+    <!--Parametro src: indicar a origem do arquivo-->
+    <!--Parametro width: define o tamanho que o video tera na tela-->
+    <!--Parametro controls: coloca o controle do video na tela-->
+    <!--Parametro poster: coloca uma imagem de poster na tela do video antes dele comecar-->
+
+    <p>Segundo tipo de codigo para colocar um video no seu site</p>
+    <video width="200" poster="pictures/tea image.webp" controls>
+        <source src="midia/meuvideomp4.mp4" type="video/mp4">
+        <source src="midia/meuvideom4v.m4v" type="video/m4v">
+        <source src="midia/meuvideowebm.webm" type="video/webm">
+        <p>Seu navegador nao e compativel com reproducao de videos</p>
+    </video>
+    <!--O bloco video serve para definir varias possibilidades de arquivo para diferentes tipos de navegadores-->
+    <!--TOMAR CUIDADO COM A TAG VIDEO, POIS ELA HOSPEDA OS VIDEOS NO PROPRIO SITE, CAUSANDO UM CONSUMO MUITO GRANDE DE GIGAS, O QUE GERARÁ MAIORES GASTOS PARA O CLIENTE-->
+
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="200" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

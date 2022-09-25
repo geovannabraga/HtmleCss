@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Icons8-Ios7-Food-Bread.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture><!--Permite que vc crie varios sources, varias fontes para aparecer uma imagem-->
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png"><!--fonte alternativa caso as condicoes para o arquivo img nao sejam cumpridas-->
+        <!--Parametro media: condicao de existencia-->
+        <!--Parametro type: tipo da imagem a ser carregada-->
+        <source media="(max-width: 1050px )" srcset="imagens/media.png" type="image/png">
+        <img src="imagens/grande.png" alt="Foto grande">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <p>Primeira forma de codigo</p>
+   <audio src="midia/forestlullabye.mp3" controls></audio><!--TAG para adicionar um audio ao site-->
+    <!--Parametro controls: serve para aparecer um controlador de pausa e despausa do audio colocado-->
+
+    <p>Segunda forma de codigo</p>
+    <audio controls><!--Outra forma de utilizar a TAG audio-->
+        <source src="midia/forestlullabye.mp3"  type="audio/mpeg">
+        <!--Parametro src: indica a origem do arquivo-->
+        <!--Parametro type: onde se deve indicar o media type do arquivo-->
+        <source src="midia/forestlullabye.ogg" type="audio/ogg">
+        <source src="midia/forestlullabye.wav" type="audio/wav">
+        <!--O site tentará carregar os arquivos de acordo com a ordem. Ou seja, caso não consiga carregar o mp3 tentará o ogg, caso não consiga tentará o wav-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/forestlullabye.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+    </audio>
+    
+</body>
+</html>
